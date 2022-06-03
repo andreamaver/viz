@@ -224,7 +224,7 @@
           <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
           Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
         </div>
-        <img src="media/download.png">
+        <img src="media/violin.jpg", width="1140px">
         <p>
           Osservando i violin plot per i diversi parametri relativi alle canzoni, si nota che il valore medio per edizione non subisce grandi variazioni nel tempo, anche se le distribuzioni variano da anno ad anno. Andando più nel particolare, la ballabilità ha subito una crescita quasi costante a partire dal 2018, fino a stabilizzarsi nell’edizione 2022. Al contrario, l’energia ha assunto valori simili per tutti e dieci gli anni, senza rilevare particolari oscillazioni, a parte una leggera flessione nel 2018. Anche il parlato non varia particolarmente e, attraverso i violini, è facile individuare la presenza di outlier, presenti in tutte le edizioni. La popolarità è il valore che segue un trend più evidente, infatti a partire dal 2018 si osserva una continua e forte crescita, che culmina con l’edizione 2022, come è giusto aspettarsi. Dopotutto, i dati sono stati acquisiti circa due mesi dopo la conclusione del Festival, perciò artisti e canzoni risentono ancora della sua spinta. I valori di positività sembrano essere tutti simili, anche se si nota un crollo nell’edizione 2015, che pare essere stata particolarmente triste; le ultime tre edizioni hanno valori e distribuzioni praticamente identici. 
           Per quanto riguarda le carriere degli artisti, invece, si possono osservare due trend: uno crescente a partire dal 2015 fino al 2018 e uno decrescente dal 2018 all’ultima edizione del 2022. Nel 2018 la media della lunghezza della carriera dei cantanti in gara è stata significativamente maggiore rispetto a tutte le altre, e non sembra influenzata da particolari outlier. Negli ultimi quattro anni si è visto un generale ringiovanimento, dovuto probabilmente al cercare di rendere più appetibile il Festival anche a un pubblico più giovane; la presunta inversione di rotta nel 2022 non deve essere fraintesa, in quanto è causata dalla presenza di quattro evidenti outlier, che spostano inevitabilmente il valore medio verso l’alto.
@@ -236,9 +236,60 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h4>VALUTAZIONE</h4>
+            <h4>VALUTAZIONE DELLE VISUALIZZAZIONI</h4>
             <p>
-              <!-- inserire testo  -->
+              Al fine di valutare le visualizzazioni sono state adottate tre metodologie principali: valutazione euristica, test utente e questionario.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h4>VALUTAZIONE EURISTICA</h4>
+            <p>
+              Una valutazione euristica è stata svolta per individuare le principali problematiche delle infografiche. É stato chiesto a 10 utenti di interagire con le visualizzazioni e di pensare ad alta voce e raccolto tutte le informazioni utili al fine di migliorare la qualità.
+              Prima di lasciare libertà agli utenti con le infografiche è stato spiegato loro il contesto del progetto e il significato delle variabili rappresentate. 
+              Le principali critiche ricevute e poi corrette in ciascuna visualizzazione sono state le seguenti: mancanza di descrizioni, risolta aggiungendo il context, sia a livello di struttura che di contenuto; colori troppo chiari, che non si distinguono dallo sfondo, risolta scegliendo un'altra palette più scura; non si distinguono le osservazioni e le differenze tra loro, risolta creando dei raggruppamenti e aumentando la dimensione dei punti.
+              Sono anche sorti complimenti: il fatto di avere inserito le linee con medie e intervalli di confidenza è stato apprezzato dagli utenti soprattutto durante la fase di test utente; il player interattivo è stato in assoluto la caratteristica più apprezzata e il fatto di poter ascoltare la particolare canzone ha riscosso molto successo.
+              Per quanto riguarda i violin plot, è stato riscontrata una difficoltà nel confrontare i valori medi delle edizioni, e perciò il fare paragoni nel tempo risultava sconveniente. Per sopperire a questo, i punti indicanti il valore medio sono stati uniti, in modo da formare una linea temporale. Questo non è propriamente corretto, perchè suggerisce un cambiamento continuo nel tempo, ma è stato apprezzato dagli utenti, che in questo modo hanno potuto analizzare la visualizazione con più chiarezza e maggiore leggibilità. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h4>TEST UTENTE</h4>
+            <p>
+              Dopo aver svolto la valutazione euristica delle visualizzazioni, sono state selezionate due delle infografiche create, per le quali sono stati ideati tre task, di difficoltà crescente, da far svolgere ad alcuni utenti per verificare la facilità di interazione. Questi test sono stati sottoposti a NUMERO utenti. Prima di procedere con il test vero e proprio, abbiamo spiegato loro l’obiettivo del nostro progetto e il significato delle variabili rappresentate.
+              Le tre infografiche con i relativi task sottoposte agli utenti sono gli scatter plot di anni di carriera x popolarità e ballabilità per energia. Per il primo, le domande sono state le seguenti: tra gli artisti con più di 20 anni di carriera individuare chi è il più popolare? (Elisa); individuare il vincitore con più anni di carriera (Stadio); quale sembra essere l’edizione con artisti mediamente con la carriera più lunga? (2018). Per il secondo sono state: individuare tra le canzoni classificate tra il quarto e il decimo posto quella meno ballabile (Raphael Gualazzi - Sai ci basta un sogno); individuare tra i primi tre classificati per ogni edizione, aventi energia sopra la media, la canzone con ballabilità maggiore (Pinguini tattici nucleari - Ringo Starr); qual è il valore di positività della canzone Brividi di Mahmood e blanco? (0,342).
+              In seguito sono riportati i risultati dei test.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <p>
+              RISULTATI TEST CON TABELLE E GRAFICI VIOLIN E STACKED
+              <img src="media/download.png", width="500px">
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h4>  QUESTIONARIO</h4>
+            <p>
+              Come ultimo metodo di valutazione delle infografiche è stato creato un questionario psicometrico in cui è stato chiesto di valutare le infografiche in base alla scala Cabitza-Locoro. Questa prevede di valutare la qualità le data visualization su una scala da 1 a 6 in base ai seguenti aggettivi: utile, chiara, informativa, bella, intuitiva.
+              Di seguito i risultati.
             </p>
           </div>
         </div>
@@ -248,77 +299,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- Secondo blocco di testo -->
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Seconda Visualizzazione -->
-      <div class="container viz">
-        <div class="row">
-          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
-          Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
-        </div>
-      </div>
-
-
-
-
-      <!-- Terzo blocco di testo -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur lorem adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Terza Visualizzazione -->
-      <div class="container viz">
-        <div class="row">
-          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
-          Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
-        </div>
-      </div>
-
-
-
-
-      <!-- Quarto blocco di testo con le conlusioni-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h4> SITOGRAFIA</h4>
+            <p><a href="#">https://www.rcharlie.com/spotifyr/</a></p>
+            <p><a href="#">https://developer.spotify.com/</a></p>
+            <p><a href="#">https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features</a></p>
+            <p><a href="#">https://rdrr.io/cran/WikidataR/</a></p>
+            <p><a href="#">https://www.data-to-viz.com/caveats.html</a></p>
           </div>
         </div>
       </div>
