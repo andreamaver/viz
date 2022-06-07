@@ -56,13 +56,31 @@
           </div>
       </div>
 
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">                      
+              <h4>Indice dei contenuti</h4>
+              <p align="justify"><ul>
+                <li class="toclevel-1 tocsection-1"><a href="#intro"><span class="toctext">Introduzione</span></a></li>
+                <li class="toclevel-1 tocsection-2"><a href="#ricerca"><span class="toctext">Domanda di ricerca</span></a></li>
+                <li class="toclevel-1 tocsection-3"><a href="#target "><span class="toctext">Target delle infografiche</span></a></li>
+                <li class="toclevel-1 tocsection-3"><a href="#dati "><span class="toctext">Raccolta dei dati</span></a></li>
+                <li class="toclevel-1 tocsection-3"><a href="#infografiche "><span class="toctext">Infografiche</span></a></li>
+                <li class="toclevel-1 tocsection-3"><a href="#valutazione "><span class="toctext">Valutazione delle visualizzazioni</span></a></li>
+              </ul>
+              </p>
+              <hr>
+            </div>
+          </div>
+        </div>
 
 
       <!-- INTRO -->
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-
+            <div id="intro" style="position: relative; top: -110px;"></div>
+                    
             <h4>INTRODUZIONE</h4>
 
             <p align="justify">“Signore e Signori, benvenuti al Casinò di Sanremo per un’eccezionale serata organizzata dalla Rai, una serata della canzone con l’orchestra di Cinico Angelini”.
@@ -78,6 +96,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
+            <div id="ricerca" style="position: relative; top: -110px;"></div>
             <h4>DOMANDA DI RICERCA</h4>
             <p align="justify">
               A causa dell’altissima risonanza mediatica del Festival di Sanremo nel nostro Paese, può risultare interessante ricercare delle correlazioni tra i vari partecipanti e le canzoni in gara, per poter scoprire qualcosa di più su questo importante evento. In particolare, lo studio si pone l’obiettivo di verificare, attraverso l’utilizzo di caratteristiche numeriche fornite dalla più grande piattaforma streaming del mondo, se le ultime dieci edizioni del Festival presentino delle differenze significative sia a livello di canzoni che di artisti partecipanti. Si cercano inoltre delle relazioni tra queste feature per ottenere degli ulteriori insight. La domanda finale, forse leggermente provocatoria, è “Le canzoni di Sanremo sono tutte uguali?”.
@@ -92,6 +111,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
+            <div id="target" style="position: relative; top: -110px;"></div>
             <h4>TARGET DELLE INFOGRAFICHE</h4>
             <p align="justify">
               Le infografiche sono rivolte a un pubblico italiano appassionato di musica, e non necessariamente fan del Festival, curioso di scoprire qualcosa di più riguardo a questo evento, che per una settimana all’anno catalizza l’attenzione di tutti i media nazionali. Le visualizzazioni sono corredate di ampie descrizioni per facilitarne l’utilizzo e la comprensibilità, oltre che qualche commento che ne descrive caratteristiche interessanti; non sono necessarie particolari conoscenze di statistica.
@@ -105,6 +125,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
+            <div id="dati" style="position: relative; top: -110px;"></div>
             <h4>RACCOLTA DEI DATI</h4>
             <p align="justify">
               La prima fase della ricerca consiste nella raccolta dei dati. A causa del fatto che non esista un dataset disponibile online riguardo al Festival di Sanremo, è necessario crearlo da zero. Per fare ciò sono stati utilizzati due sistemi di API (Application Programming Interface), cioè quelle di Spotify e quelle di WikiData. Le API sono delle interfacce che permettono di svolgere particolari azioni, in questo caso scaricare dati disponibili nel web, in modo semplice e veloce. Sono messe a disposizione dagli stessi siti proprietari, che forniscono la possibilità a sviluppatori e ricercatori di scaricare il loro dati in modo libero e gratuito. Il primo passaggio è stato quello di creare dieci playlist Spotify contenenti le canzoni che hanno partecipato al festival. Fatto ciò è stato possibile iniziare il download dei dati: tramite il linguaggio di programmazione R e un pacchetto chiamato “spotifyr”, è possibile utilizzare delle speciali funzioni per procurarsi tutte le informazioni che Spotify rende disponibili in relazione a canzoni o artisti. Questo permette di ottenere due tabelle, appunto una per le tracce e l’altra per gli artisti; la prima viene integrata con l’anno dell’edizione in cui la canzone era in gara e la posizione di arrivo nella classifica finale. La seconda necessita di un'ulteriore integrazione tramite le API di WikiData. Questo è un grafo di conoscenza che contiene informazioni simili a quelle del cugino più conosciuto Wikipedia, ma in un diverso formato, cioè proprietà-valore. Utilizzando il pacchetto R “WikiDataR” e gli ID identificativi Spotify specifici per ogni artista, viene fatto un matching all’interno del grafo; una volta trovato il/la cantante in questione, se ne salva l’anno di inizio carriera. A questo punto la tabella artisti può essere integrata ulteriormente con edizione, posizione in classifica e gli anni di carriera, trovati come semplice differenza tra anno di inizio e anno di partecipazione al Festival. Le due tabelle finali sono composte nel seguente modo.            
@@ -144,6 +165,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
+            <div id="infografiche" style="position: relative; top: -110px;"></div>
             <h4>INFOGRAFICHE</h4>
             <p align="justify">
               Per rispondere alle domande di ricerca sono stati utilizzati due tipi di infografiche, che verranno descritti più dettagliatamente nelle successive parti del report, cioè degli scatter plot e dei violin plot, sia per le canzoni che per gli artisti. I primi permettono di osservare se esistano o meno delle relazioni tra le diverse feature numeriche che descrivono le tracce, mentre i secondi permettono di osservare se ci siano stati cambiamenti significativi tra un’edizione e l'altra, e se le distribuzioni delle canzoni per i parametri siano variate nell’arco degli ultimi dieci anni.
@@ -245,6 +267,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
+            <div id="valutazione" style="position: relative; top: -110px;"></div>
             <h4>VALUTAZIONE DELLE VISUALIZZAZIONI</h4>
             <p align="justify">
               Al fine di valutare le visualizzazioni sono state adottate tre metodologie principali: valutazione euristica, test utente e questionario.
